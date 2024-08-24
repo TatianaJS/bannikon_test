@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+            crossorigin="anonymous"
+        />
+        <link href="styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Кухни на заказ</title>
+    </head>
+    <body>
+        <div id="catalog-page" class="green">
+            <header>
+                <div class="top__header">
+                    <div class="container">
+                        <div class="schedule">
+                            <span class="indicator"></span>
+                            Ежедневно: с 9-00 до 21-00
+                        </div>
+                        <div class="links">
+                            <div>
+                                <a href="#" class="calculation__link">
+                                    Заказать расчет кухни
+                                </a>
+                                <img
+                                    class="icon"
+                                    src="assets/svg/arcticons_neumorphic-calculator.svg"
+                                    alt="calc icon"
+                                />
+                            </div>
+                            <div>
+                                <a href="#" class="design__link">
+                                    Заказать дизайн-проект
+                                </a>
+                                <img
+                                    class="icon"
+                                    src="assets/svg/clarity_design-line.svg"
+                                    alt="calc icon"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom__header">
+                    <div class="container">
+                        <div class="left-side">
+                            <a href="/" class="logo"></a>
+                            <div class="search">
+                                <img
+                                    class="icon"
+                                    src="assets/svg/search.svg"
+                                    alt="calc icon"
+                                />
+                            </div>
+                        </div>
+                        <nav class="menu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Каталог</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Акции</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Салоны</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">О компании</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Блог</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="phone">
+                            <div class="phone-number">+7 (999) 111-11-11</div>
+                            <button class="call-me-back__btn">
+                                Перезвоните мне
+                                <img
+                                    class="icon"
+                                    src="assets/svg/bi_arrow-right-short.svg"
+                                    alt="calc icon"
+                                />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="container">
+                    <nav aria-label="breadcrumb" class="breadcrumb__blc">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#">Главная</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="#">Каталог</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="#">Кухни</a>
+                            </li>
+                            <li
+                                class="breadcrumb-item active"
+                                aria-current="page"
+                            >
+                                Все
+                            </li>
+                        </ol>
+                    </nav>
+                    <h1>Кухни на заказ</h1>
+                    <div class="description">
+                        <p>
+                            Компания &laquo;Кухни от&nbsp;природы&raquo; более 9
+                            лет предоставляет полный комплекс услуг
+                            по&nbsp;продаже, производству,
+                            доставке&nbsp;и&nbsp;сборке кухонь на&nbsp;заказ
+                            по&nbsp;индивидуальным размерам в&nbsp;Москве
+                            и&nbsp;на&nbsp;всей территории московской области
+                            &mdash;&nbsp;вся заказанная кухонная мебель
+                            изготавливается в&nbsp;соответствии
+                            с&nbsp;пожеланиями и&nbsp;требованиями заказчика.
+                        </p>
+                    </div>
+                    <div class="catalog">
+                        <div class="filters">
+                            <button class="extra-filters">
+                                <img
+                                    class="icon"
+                                    src="assets/svg/filters.svg"
+                                    alt="calc icon"
+                                />
+                                показать фильтры
+                            </button>
+                            <div class="filter-btns">
+                                <div class="btn-group">
+                                    <div class="dropdown">
+                                        <a
+                                            class="dropdown-toggle"
+                                            href="#"
+                                            role="button"
+                                            id="dropdownMenuLink"
+                                            data-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            Тип
+                                            <i class="down"></i>
+                                        </a>
+
+                                        <ul
+                                            class="dropdown-menu"
+                                            aria-labelledby="dropdownMenuLink"
+                                        >
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >Тип 1</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >Тип 2</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >Тип 3</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <div class="dropdown">
+                                        <a
+                                            class="btn dropdown-toggle"
+                                            href="#"
+                                            role="button"
+                                            id="dropdownMenuLink"
+                                            data-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            Стиль
+                                            <i class="down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <div class="dropdown">
+                                        <a
+                                            class="btn dropdown-toggle"
+                                            href="#"
+                                            role="button"
+                                            id="dropdownMenuLink"
+                                            data-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            Материал
+                                            <i class="down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <div class="dropdown">
+                                        <a
+                                            class="btn dropdown-toggle"
+                                            href="#"
+                                            role="button"
+                                            id="dropdownMenuLink"
+                                            data-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            Цвет
+                                            <i class="down"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-list">
+                            <div class="row">
+                                <div class="col col-md-4">
+                                    <div class="item">
+                                        <div class="item__img">
+                                            <img
+                                                src="images/kuhnya-iz-keramogranita-1-640x480.png"
+                                                alt="Савойя"
+                                            />
+                                        </div>
+                                        <div class="first-row">
+                                            <div class="item__title">
+                                                <span class="item__label"
+                                                    >Современная кухня</span
+                                                >
+                                                <span class="title"
+                                                    >Савойя</span
+                                                >
+                                            </div>
+                                            <div class="calculator">
+                                                Калькулятор
+                                                <img
+                                                    src="assets/svg/carbon_calculator-check.svg"
+                                                    alt="Калькулятор"
+                                                />
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="item__price">
+                                            <div class="price">
+                                                <span class="light-bold"
+                                                    >Цена</span
+                                                >
+                                                от
+                                                <span class="price-number"
+                                                    >29 999</span
+                                                >
+                                                руб. / метр
+                                            </div>
+                                            <div class="check-price light-bold">
+                                                <a href="#">Узнать стоимость</a>
+                                                <img
+                                                    src="assets/svg/arrow_grey.svg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-4">
+                                    <div class="item">
+                                        <div class="hit item__sticker">
+                                            Хит продаж
+                                        </div>
+                                        <div class="item__img">
+                                            <img
+                                                src="images/sovremennaya-kuhnya-rain-iz-mdf-1-640x480.png"
+                                                alt="Тренто"
+                                            />
+                                        </div>
+                                        <div class="first-row">
+                                            <div class="item__title">
+                                                <span class="item__label"
+                                                    >Современная кухня</span
+                                                >
+                                                <span class="title"
+                                                    >Тренто</span
+                                                >
+                                            </div>
+                                            <div class="calculator">
+                                                Калькулятор
+                                                <img
+                                                    src="assets/svg/carbon_calculator-check.svg"
+                                                    alt="Калькулятор"
+                                                />
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="item__price">
+                                            <div class="price">
+                                                <span class="light-bold"
+                                                    >Цена</span
+                                                >
+                                                от
+                                                <span class="price-number"
+                                                    >29 999</span
+                                                >
+                                                руб. / метр
+                                            </div>
+                                            <div class="check-price light-bold">
+                                                <a href="#">Узнать стоимость</a>
+                                                <img
+                                                    src="assets/svg/arrow_grey.svg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-4">
+                                    <div class="item">
+                                        <div class="new item__sticker">
+                                            Новинка
+                                        </div>
+                                        <div class="item__img">
+                                            <img
+                                                src="images/sovremennaya-kuhnya-iz-mdf-olimp-1-640x480.png"
+                                                alt="Фуксия"
+                                            />
+                                            <div class="img__stickers">
+                                                <div>Любой цвет</div>
+                                                <div>Любые размеры и форма</div>
+                                                <div>5 вариантов декора</div>
+                                            </div>
+                                        </div>
+                                        <div class="first-row">
+                                            <div class="item__title">
+                                                <span class="item__label"
+                                                    >Современная кухня</span
+                                                >
+                                                <span class="title"
+                                                    >Фуксия</span
+                                                >
+                                            </div>
+                                            <div class="calculator">
+                                                Калькулятор
+                                                <img
+                                                    src="assets/svg/carbon_calculator-check.svg"
+                                                    alt="Калькулятор"
+                                                />
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="item__price">
+                                            <div class="price">
+                                                <span class="light-bold"
+                                                    >Цена</span
+                                                >
+                                                от
+                                                <span class="price-number"
+                                                    >29 999</span
+                                                >
+                                                руб. / метр
+                                            </div>
+                                            <div class="check-price light-bold">
+                                                <a href="#">Узнать стоимость</a>
+                                                <img
+                                                    src="assets/svg/arrow_grey.svg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-md-4">
+                                    <div class="item">
+                                        <div class="new item__sticker">
+                                            Новинка
+                                        </div>
+                                        <div class="item__img">
+                                            <img
+                                                src="images/sovremennaya-kuhnya-iz-mdf-olimp-1-640x480.png"
+                                                alt="Фуксия"
+                                            />
+                                            <div class="img__stickers">
+                                                <div>Любой цвет</div>
+                                                <div>Любые размеры и форма</div>
+                                                <div>5 вариантов декора</div>
+                                            </div>
+                                        </div>
+                                        <div class="first-row">
+                                            <div class="item__title">
+                                                <span class="item__label"
+                                                    >Современная кухня</span
+                                                >
+                                                <span class="title"
+                                                    >Фуксия</span
+                                                >
+                                            </div>
+                                            <div class="calculator">
+                                                Калькулятор
+                                                <img
+                                                    src="assets/svg/carbon_calculator-check.svg"
+                                                    alt="Калькулятор"
+                                                />
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="item__price">
+                                            <div class="price">
+                                                <span class="light-bold"
+                                                    >Цена</span
+                                                >
+                                                от
+                                                <span class="price-number"
+                                                    >29 999</span
+                                                >
+                                                руб. / метр
+                                            </div>
+                                            <div class="check-price light-bold">
+                                                <a href="#">Узнать стоимость</a>
+                                                <img
+                                                    src="assets/svg/arrow_grey.svg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-4">
+                                    <div class="item">
+                                        <div class="item__img">
+                                            <img
+                                                src="images/kuhnya-iz-keramogranita-1-640x480.png"
+                                                alt="Савойя"
+                                            />
+                                        </div>
+                                        <div class="first-row">
+                                            <div class="item__title">
+                                                <span class="item__label"
+                                                    >Современная кухня</span
+                                                >
+                                                <span class="title"
+                                                    >Савойя</span
+                                                >
+                                            </div>
+                                            <div class="calculator">
+                                                Калькулятор
+                                                <img
+                                                    src="assets/svg/carbon_calculator-check.svg"
+                                                    alt="Калькулятор"
+                                                />
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="item__price">
+                                            <div class="price">
+                                                <span class="light-bold"
+                                                    >Цена</span
+                                                >
+                                                от
+                                                <span class="price-number"
+                                                    >29 999</span
+                                                >
+                                                руб. / метр
+                                            </div>
+                                            <div class="check-price light-bold">
+                                                <a href="#">Узнать стоимость</a>
+                                                <img
+                                                    src="assets/svg/arrow_grey.svg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-4">
+                                    <div class="item">
+                                        <div class="hit item__sticker">
+                                            Хит продаж
+                                        </div>
+                                        <div class="item__img">
+                                            <img
+                                                src="images/sovremennaya-kuhnya-rain-iz-mdf-1-640x480.png"
+                                                alt="Тренто"
+                                            />
+                                        </div>
+                                        <div class="first-row">
+                                            <div class="item__title">
+                                                <span class="item-label"
+                                                    >Современная кухня</span
+                                                >
+                                                <span class="title"
+                                                    >Тренто</span
+                                                >
+                                            </div>
+                                            <div class="calculator">
+                                                Калькулятор
+                                                <img
+                                                    src="assets/svg/carbon_calculator-check.svg"
+                                                    alt="Калькулятор"
+                                                />
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="item__price">
+                                            <div class="price">
+                                                <span class="light-bold"
+                                                    >Цена</span
+                                                >
+                                                от
+                                                <span class="price-number"
+                                                    >29 999</span
+                                                >
+                                                руб. / метр
+                                            </div>
+                                            <div class="check-price light-bold">
+                                                <a href="#">Узнать стоимость</a>
+                                                <img
+                                                    src="assets/svg/arrow_grey.svg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col col-md-6">
+                                            <div class="item">
+                                                <div class="hit item__sticker">
+                                                    Хит продаж
+                                                </div>
+                                                <div class="item__img">
+                                                    <img
+                                                        src="images/sovremennaya-kuhnya-rain-iz-mdf-1-640x480.png"
+                                                        alt="Тренто"
+                                                    />
+                                                </div>
+                                                <div class="first-row">
+                                                    <div class="item__title">
+                                                        <span
+                                                            class="item__label"
+                                                            >Современная
+                                                            кухня</span
+                                                        >
+                                                        <span class="title"
+                                                            >Тренто</span
+                                                        >
+                                                    </div>
+                                                    <div class="calculator">
+                                                        Калькулятор
+                                                        <img
+                                                            src="assets/svg/carbon_calculator-check.svg"
+                                                            alt="Калькулятор"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <hr />
+                                                <div class="item__price">
+                                                    <div class="price">
+                                                        <span class="light-bold"
+                                                            >Цена</span
+                                                        >
+                                                        от
+                                                        <span
+                                                            class="price-number"
+                                                            >29 999</span
+                                                        >
+                                                        руб. / метр
+                                                    </div>
+                                                    <div
+                                                        class="check-price light-bold"
+                                                    >
+                                                        <a href="#"
+                                                            >Узнать стоимость</a
+                                                        >
+                                                        <img
+                                                            src="assets/svg/arrow_grey.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-md-6">
+                                            <div class="item">
+                                                <div class="new item__sticker">
+                                                    Новинка
+                                                </div>
+                                                <div class="item__img">
+                                                    <img
+                                                        src="images/sovremennaya-kuhnya-iz-mdf-olimp-1-640x480.png"
+                                                        alt="Фуксия"
+                                                    />
+                                                    <div class="img__stickers">
+                                                        <div>Любой цвет</div>
+                                                        <div>
+                                                            Любые размеры и
+                                                            форма
+                                                        </div>
+                                                        <div>
+                                                            5 вариантов декора
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="first-row">
+                                                    <div class="item__title">
+                                                        <span
+                                                            class="item__label"
+                                                            >Современная
+                                                            кухня</span
+                                                        >
+                                                        <span class="title"
+                                                            >Фуксия</span
+                                                        >
+                                                    </div>
+                                                    <div class="calculator">
+                                                        Калькулятор
+                                                        <img
+                                                            src="assets/svg/carbon_calculator-check.svg"
+                                                            alt="Калькулятор"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <hr />
+                                                <div class="item__price">
+                                                    <div class="price">
+                                                        <span class="light-bold"
+                                                            >Цена</span
+                                                        >
+                                                        от
+                                                        <span
+                                                            class="price-number"
+                                                            >29 999</span
+                                                        >
+                                                        руб. / метр
+                                                    </div>
+                                                    <div
+                                                        class="check-price light-bold"
+                                                    >
+                                                        <a href="#"
+                                                            >Узнать стоимость</a
+                                                        >
+                                                        <img
+                                                            src="assets/svg/arrow_grey.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col col-md-6">
+                                            <div class="item">
+                                                <div class="new item__sticker">
+                                                    Новинка
+                                                </div>
+                                                <div class="item__img">
+                                                    <img
+                                                        src="images/sovremennaya-kuhnya-iz-mdf-olimp-1-640x480.png"
+                                                        alt="Фуксия"
+                                                    />
+                                                    <div class="img__stickers">
+                                                        <div>Любой цвет</div>
+                                                        <div>
+                                                            Любые размеры и
+                                                            форма
+                                                        </div>
+                                                        <div>
+                                                            5 вариантов декора
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="first-row">
+                                                    <div class="item__title">
+                                                        <span
+                                                            class="item__label"
+                                                            >Современная
+                                                            кухня</span
+                                                        >
+                                                        <span class="title"
+                                                            >Фуксия</span
+                                                        >
+                                                    </div>
+                                                    <div class="calculator">
+                                                        Калькулятор
+                                                        <img
+                                                            src="assets/svg/carbon_calculator-check.svg"
+                                                            alt="Калькулятор"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <hr />
+                                                <div class="item__price">
+                                                    <div class="price">
+                                                        <span class="light-bold"
+                                                            >Цена</span
+                                                        >
+                                                        от
+                                                        <span
+                                                            class="price-number"
+                                                            >29 999</span
+                                                        >
+                                                        руб. / метр
+                                                    </div>
+                                                    <div
+                                                        class="check-price light-bold"
+                                                    >
+                                                        <a href="#"
+                                                            >Узнать стоимость</a
+                                                        >
+                                                        <img
+                                                            src="assets/svg/arrow_grey.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-md-6">
+                                            <div class="item">
+                                                <div class="item__img">
+                                                    <img
+                                                        src="images/kuhnya-iz-keramogranita-1-640x480.png"
+                                                        alt="Савойя"
+                                                    />
+                                                </div>
+                                                <div class="first-row">
+                                                    <div class="item__title">
+                                                        <span
+                                                            class="item__label"
+                                                            >Современная
+                                                            кухня</span
+                                                        >
+                                                        <span class="title"
+                                                            >Савойя</span
+                                                        >
+                                                    </div>
+                                                    <div class="calculator">
+                                                        Калькулятор
+                                                        <img
+                                                            src="assets/svg/carbon_calculator-check.svg"
+                                                            alt="Калькулятор"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <hr />
+                                                <div class="item__price">
+                                                    <div class="price">
+                                                        <span class="light-bold"
+                                                            >Цена</span
+                                                        >
+                                                        от
+                                                        <span
+                                                            class="price-number"
+                                                            >29 999</span
+                                                        >
+                                                        руб. / метр
+                                                    </div>
+                                                    <div
+                                                        class="check-price light-bold"
+                                                    >
+                                                        <a href="#"
+                                                            >Узнать стоимость</a
+                                                        >
+                                                        <img
+                                                            src="assets/svg/arrow_grey.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-4">
+                                    <div class="item service_block">
+                                        <div class="item__img">
+                                            <img
+                                                src="images/green_backgrd.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="content_block">
+                                            <p class="title">
+                                                Рассчитать
+                                                <br />
+                                                вашу кухню
+                                                <img
+                                                    src="assets/svg/kch_calculation.svg"
+                                                    alt="Рассчитать кухню"
+                                                />
+                                            </p>
+                                            <p>
+                                                Расчёт производится
+                                                индивидуально
+                                                <br />
+                                                с&nbsp;учетом всех Ваших
+                                                пожеланий
+                                            </p>
+                                            <p class="offer">
+                                                Запишитесь в&nbsp;салон
+                                                и&nbsp;мы&nbsp;вернем
+                                                3&nbsp;000&nbsp;рублей
+                                                с&nbsp;вашего заказа
+                                            </p>
+                                            <form action="#">
+                                                <div>
+                                                    <label for="name"
+                                                        >Представьтесь</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        name="name"
+                                                        placeholder="Ваше имя"
+                                                        id="name"
+                                                    />
+                                                </div>
+                                                <div>
+                                                    <label for="phone"
+                                                        >Телефон</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        name="phone"
+                                                        placeholder="+7 (000) 000 - 00 - 00"
+                                                        id="phone"
+                                                    />
+                                                </div>
+                                                <div>
+                                                    <label for="message"
+                                                        >Комментарий</label
+                                                    >
+                                                    <textarea
+                                                        name="message"
+                                                        id="message"
+                                                    ></textarea>
+                                                </div>
+                                                <div class="form-file">
+                                                    <input
+                                                        type="file"
+                                                        class="form-file-input"
+                                                        id="customFile"
+                                                    />
+                                                    <label
+                                                        class="form-file-label"
+                                                        for="customFile"
+                                                    >
+                                                        <span
+                                                            class="form-file-text"
+                                                            >Вложить файл (не
+                                                            более 5 Мб)
+                                                            <img
+                                                                src="assets/svg/fluent_attach-24-regular.svg"
+                                                                alt=""
+                                                        /></span>
+                                                    </label>
+                                                </div>
+                                                <button type="submit">
+                                                    Заказать расчет кухни
+                                                    <img
+                                                        src="assets/svg/bi_arrow-right-short.svg"
+                                                        alt=""
+                                                    />
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-md-4">
+                                    <div class="item">
+                                        <div class="item__img">
+                                            <img
+                                                src="images/kuhnya-iz-keramogranita-1-640x480.png"
+                                                alt="Савойя"
+                                            />
+                                        </div>
+                                        <div class="first-row">
+                                            <div class="item__title">
+                                                <span class="item__label"
+                                                    >Современная кухня</span
+                                                >
+                                                <span class="title"
+                                                    >Савойя</span
+                                                >
+                                            </div>
+                                            <div class="calculator">
+                                                Калькулятор
+                                                <img
+                                                    src="assets/svg/carbon_calculator-check.svg"
+                                                    alt="Калькулятор"
+                                                />
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="item__price">
+                                            <div class="price">
+                                                <span class="light-bold"
+                                                    >Цена</span
+                                                >
+                                                от
+                                                <span class="price-number"
+                                                    >29 999</span
+                                                >
+                                                руб. / метр
+                                            </div>
+                                            <div class="check-price light-bold">
+                                                <a href="#">Узнать стоимость</a>
+                                                <img
+                                                    src="assets/svg/arrow_grey.svg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-4">
+                                    <div class="item">
+                                        <div class="hit item__sticker">
+                                            Хит продаж
+                                        </div>
+                                        <div class="item__img">
+                                            <img
+                                                src="images/sovremennaya-kuhnya-rain-iz-mdf-1-640x480.png"
+                                                alt="Тренто"
+                                            />
+                                        </div>
+                                        <div class="first-row">
+                                            <div class="item__title">
+                                                <span class="item__label"
+                                                    >Современная кухня</span
+                                                >
+                                                <span class="title"
+                                                    >Тренто</span
+                                                >
+                                            </div>
+                                            <div class="calculator">
+                                                Калькулятор
+                                                <img
+                                                    src="assets/svg/carbon_calculator-check.svg"
+                                                    alt="Калькулятор"
+                                                />
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="item__price">
+                                            <div class="price">
+                                                <span class="light-bold"
+                                                    >Цена</span
+                                                >
+                                                от
+                                                <span class="price-number"
+                                                    >29 999</span
+                                                >
+                                                руб. / метр
+                                            </div>
+                                            <div class="check-price light-bold">
+                                                <a href="#">Узнать стоимость</a>
+                                                <img
+                                                    src="assets/svg/arrow_grey.svg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-4">
+                                    <div class="item">
+                                        <div class="new item__sticker">
+                                            Новинка
+                                        </div>
+                                        <div class="item__img">
+                                            <img
+                                                src="images/sovremennaya-kuhnya-iz-mdf-olimp-1-640x480.png"
+                                                alt="Фуксия"
+                                            />
+                                            <div class="img__stickers">
+                                                <div>Любой цвет</div>
+                                                <div>Любые размеры и форма</div>
+                                                <div>5 вариантов декора</div>
+                                            </div>
+                                        </div>
+                                        <div class="first-row">
+                                            <div class="item__title">
+                                                <span class="item__label"
+                                                    >Современная кухня</span
+                                                >
+                                                <span class="title"
+                                                    >Фуксия</span
+                                                >
+                                            </div>
+                                            <div class="calculator">
+                                                Калькулятор
+                                                <img
+                                                    src="assets/svg/carbon_calculator-check.svg"
+                                                    alt="Калькулятор"
+                                                />
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="item__price">
+                                            <div class="price">
+                                                <span class="light-bold"
+                                                    >Цена</span
+                                                >
+                                                от
+                                                <span class="price-number"
+                                                    >29 999</span
+                                                >
+                                                руб. / метр
+                                            </div>
+                                            <div class="check-price light-bold">
+                                                <a href="#">Узнать стоимость</a>
+                                                <img
+                                                    src="assets/svg/arrow_grey.svg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-md-4">
+                                    <div class="item">
+                                        <div class="new item__sticker">
+                                            Новинка
+                                        </div>
+                                        <div class="item__img">
+                                            <img
+                                                src="images/sovremennaya-kuhnya-iz-mdf-olimp-1-640x480.png"
+                                                alt="Фуксия"
+                                            />
+                                            <div class="img__stickers">
+                                                <div>Любой цвет</div>
+                                                <div>Любые размеры и форма</div>
+                                                <div>5 вариантов декора</div>
+                                            </div>
+                                        </div>
+                                        <div class="first-row">
+                                            <div class="item__title">
+                                                <span class="item__label"
+                                                    >Современная кухня</span
+                                                >
+                                                <span class="title"
+                                                    >Фуксия</span
+                                                >
+                                            </div>
+                                            <div class="calculator">
+                                                Калькулятор
+                                                <img
+                                                    src="assets/svg/carbon_calculator-check.svg"
+                                                    alt="Калькулятор"
+                                                />
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="item__price">
+                                            <div class="price">
+                                                <span class="light-bold"
+                                                    >Цена</span
+                                                >
+                                                от
+                                                <span class="price-number"
+                                                    >29 999</span
+                                                >
+                                                руб. / метр
+                                            </div>
+                                            <div class="check-price light-bold">
+                                                <a href="#">Узнать стоимость</a>
+                                                <img
+                                                    src="assets/svg/arrow_grey.svg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-4">
+                                    <div class="item">
+                                        <div class="item__img">
+                                            <img
+                                                src="images/kuhnya-iz-keramogranita-1-640x480.png"
+                                                alt="Савойя"
+                                            />
+                                        </div>
+                                        <div class="first-row">
+                                            <div class="item__title">
+                                                <span class="item__label"
+                                                    >Современная кухня</span
+                                                >
+                                                <span class="title"
+                                                    >Савойя</span
+                                                >
+                                            </div>
+                                            <div class="calculator">
+                                                Калькулятор
+                                                <img
+                                                    src="assets/svg/carbon_calculator-check.svg"
+                                                    alt="Калькулятор"
+                                                />
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="item__price">
+                                            <div class="price">
+                                                <span class="light-bold"
+                                                    >Цена</span
+                                                >
+                                                от
+                                                <span class="price-number"
+                                                    >29 999</span
+                                                >
+                                                руб. / метр
+                                            </div>
+                                            <div class="check-price light-bold">
+                                                <a href="#">Узнать стоимость</a>
+                                                <img
+                                                    src="assets/svg/arrow_grey.svg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-4">
+                                    <div class="item">
+                                        <div class="hit item__sticker">
+                                            Хит продаж
+                                        </div>
+                                        <div class="item__img">
+                                            <img
+                                                src="images/sovremennaya-kuhnya-rain-iz-mdf-1-640x480.png"
+                                                alt="Тренто"
+                                            />
+                                        </div>
+                                        <div class="first-row">
+                                            <div class="item__title">
+                                                <span class="item-label"
+                                                    >Современная кухня</span
+                                                >
+                                                <span class="title"
+                                                    >Тренто</span
+                                                >
+                                            </div>
+                                            <div class="calculator">
+                                                Калькулятор
+                                                <img
+                                                    src="assets/svg/carbon_calculator-check.svg"
+                                                    alt="Калькулятор"
+                                                />
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="item__price">
+                                            <div class="price">
+                                                <span class="light-bold"
+                                                    >Цена</span
+                                                >
+                                                от
+                                                <span class="price-number"
+                                                    >29 999</span
+                                                >
+                                                руб. / метр
+                                            </div>
+                                            <div class="check-price light-bold">
+                                                <a href="#">Узнать стоимость</a>
+                                                <img
+                                                    src="assets/svg/arrow_grey.svg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <nav aria-label="page-navigation">
+                            <ul class="pagination">
+                                <li class="page-item disabled">
+                                    <a
+                                        class="page-link previous"
+                                        href="#"
+                                        aria-label="Previous"
+                                        aria-disabled="true"
+                                    >
+                                        <span aria-hidden="true"></span>
+                                    </a>
+                                </li>
+                                <li
+                                    class="page-item active arrow"
+                                    aria-current="page"
+                                >
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">4</a>
+                                </li>
+                                <li class="page-item">
+                                    <span>...</span>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">7</a>
+                                </li>
+                                <li class="page-item">
+                                    <a
+                                        class="page-link next arrow"
+                                        href="#"
+                                        aria-label="Next"
+                                    >
+                                        <span aria-hidden="true"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="page-content">
+                        <h2 class="page-content__title">
+                            Кухни на заказ по индивидуальным размерам —
+                            <span>недорого</span> и <span>под ключ</span>
+                        </h2>
+                    </div>
+                    <div class="page-content__text">
+                        <div class="row">
+                            <div class="col col-md-9">
+                                <div class="row">
+                                    <div class="col col-md-6">
+                                        <p class="styled">Выгодная цена</p>
+                                        <p>
+                                            Стоимость кухни
+                                            по&nbsp;индивидуальному заказу
+                                            от&nbsp;нашей компании выходит
+                                            на&nbsp;15&ndash;20% дешевле, чем
+                                            в&nbsp;среднем по&nbsp;рынку!
+                                            И&nbsp;это не&nbsp;учитывая
+                                            постоянные скидки
+                                            и&nbsp;спецпредложения.
+                                        </p>
+                                    </div>
+                                    <div class="col col-md-6">
+                                        <p class="styled">Большой выбор</p>
+                                        <p>
+                                            Широкий ассортимент: в&nbsp;каталоге
+                                            нашего
+                                            <nobr>интернет-магазина</nobr>
+                                            представлено 211 вариантов
+                                            изготовления кухни под
+                                            заказ&nbsp;&mdash; от недорогих
+                                            и&nbsp;небольших до&nbsp;кухонных
+                                            гарнитуров
+                                            <nobr>премиум-класса</nobr>.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-md-6">
+                                        <p class="styled">
+                                            Персональный подход
+                                        </p>
+                                        <p>
+                                            Уникальный подход к&nbsp;каждому
+                                            клиенту: Выберите определенную
+                                            модель, и&nbsp;мы&nbsp;внесём
+                                            в&nbsp;её
+                                            <nobr>дизайн-проект</nobr> любые
+                                            изменения под ваши конкретные нужды
+                                            и&nbsp;задачи. При производстве
+                                            будущего гарнитура мы&nbsp;учтём все
+                                            ваши пожелания.
+                                        </p>
+                                    </div>
+                                    <div class="col col-md-6">
+                                        <p class="styled">Любое исполнение</p>
+                                        <p>
+                                            Мы&nbsp;можем предложить вам кухни
+                                            на&nbsp;заказ от&nbsp;производителя
+                                            из&nbsp;Беларуси: наша
+                                            компания&nbsp;&mdash; официальный
+                                            представитель ведущих белорусских
+                                            мебельных фабрик: Vogelbaum, ЗОВ,
+                                            Фактортех и&nbsp;других.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-md-6">
+                                        <p class="styled">Качество</p>
+                                        <p>
+                                            Вся кухонная мебель производится
+                                            на&nbsp;современном оборудовании,
+                                            оборудованном ЧПУ на&nbsp;ведущих
+                                            мебельных фабриках Европы
+                                            и&nbsp;СНГ: производство кухни
+                                            по&nbsp;индивидуальным размерам
+                                            происходит с&nbsp;применением
+                                            современных европейских
+                                            комплектующих, что гарантирует
+                                            ей&nbsp;высокое качество.
+                                        </p>
+                                    </div>
+                                    <div class="col col-md-6 special-txt">
+                                        <p>
+                                            Изготовление кухни на&nbsp;заказ без
+                                            скрытых платежей или наценок
+                                            за&nbsp;&laquo;нестандарт&raquo;!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 img-block">
+                                <div class="page-content__img">
+                                    <img
+                                        src="images/kuhnya-zov-iz-massiva-yasenya-glion-1-640x480_1.png"
+                                        alt="Кухни на заказ по индивидуальным размерам"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coloured-block">
+                        <div class="text-block">
+                            <p>
+                                При заказе кухни на&nbsp;сумму от&nbsp;350 тысяч
+                                мы&nbsp;предоставляем бесплатную доставку
+                                и&nbsp;сборку.
+                                <br />
+                                Мы&nbsp;ценим своих клиентов и&nbsp;готовы
+                                предложить вам отличные условия.
+                                <br />
+                                Подготовим кухню созданную специально под Вас!
+                            </p>
+                        </div>
+                        <button>
+                            Заказать расчет кухни
+                            <img
+                                src="assets/svg/bi_arrow-right-short_black.svg"
+                                alt=""
+                            />
+                        </button>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="container">
+                    <div class="city-block">
+                        <p>
+                            <b
+                                >Мы работаем в Москве и по всей территории
+                                Московской области:</b
+                            >
+                            Апрелевка, Балашиха, Бронница, Верея, Видное,
+                            Волоколамск, Воскресенск, Высоковск, Голицыно,
+                            Дедовск, Джержинский, Дмитров, Долгопрудный,
+                            Домодедово, Дрезна, Дубна, Железнодорожный,
+                            Жуковский, Зарайск, Звенигород, Зеленоград,
+                            Ивантеевка, Истра, Кашира, Климовск, Клин, Коломна,
+                            Королев, Котельники, Красноармейск, Красногорск,
+                            Краснозаводск, Краснознаменск, Кубинка, Куровское,
+                            Лобня, Лосино-Петровский, Лукино-Дулево, Луховицы,
+                            Лыткарино, Люберцы, Можайск, Московский, Мытищи,
+                            Наро-Фоминск, Ногинск, Одинцово, Ожерелье, Озеры,
+                            Орехово-Зуево, Павловский Пасад, Пересвет, Подольск,
+                            Протвино, Пушкино, Пущино, Раменское, Реутов,
+                            Рошаль, Руза, Сергиев Посад, Серпухов,
+                            Солнечногорск, Старая купавна, Ступино, Сходня,
+                            Талдом, Троицк, Фрязино, Химки, Хотьково,
+                            Черноголовка, Чехов, Шатура, Щелково, Щербинка,
+                            Электрогорск, Электросталь, Электроугли, Юбилейный,
+                            Яхрома
+                        </p>
+                    </div>
+                    <div class="company-info">
+                        <div class="logo"></div>
+                        <div class="phone-info">
+                            <div class="phone">+7(999)111-11-11</div>
+                            <button class="call-back">перезвоните мне</button>
+                        </div>
+                        <div class="schedule">
+                            Режим работы:
+                            <br />
+                            с <b>11.00</b> до <b>20.00</b>
+                        </div>
+                    </div>
+                    <div class="links row">
+                        <div class="col-md-5">
+                            <p class="links-col__title">Кухни</p>
+                            <ul class="nav catalog-navigation">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        aria-current="page"
+                                        href="#"
+                                        >Современные</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >Классические</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Неоклассика</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Прованс</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Кантри</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Хайтек</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Модерн</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Минимализм</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >В скандинавском стиле</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Лофт</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="links-col__title">Материалы и техника</p>
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Фурнитура</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Фасады</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Каркасы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Столешницы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >Бытовая техника</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="links-col__title">Разделы</p>
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Каталог</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Акции</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >Доставка и сборка</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Оплата</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"
+                                        >Адреса салонов</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="links-col__title">Покупателям</p>
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Портфолио</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Блог</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Отзывы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Гарантии</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Рассрочка</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom-info">
+                        <div class="copyright">© 2000. Все права защищены</div>
+                        <div class="social-links">
+                            <a href="#" class="viber"></a>
+                            <a href="#" class="telegram"></a>
+                            <a href="#" class="yt"></a>
+                            <a href="#" class="vk"></a>
+                        </div>
+                        <div class="it-developer">Powered by Bannikon</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+            integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+            crossorigin="anonymous"
+        ></script>
+        <script src="app.js"></script>
+    </body>
+</html>
