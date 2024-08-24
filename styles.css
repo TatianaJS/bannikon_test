@@ -1501,6 +1501,9 @@ footer .links .nav .active {
         font-size: 24px;
         line-height: 38px;
     }
+    .green .page-content__title {
+        width: 100%;
+    }
     .row .col {
         margin: 0 0 20px;
     }
@@ -1567,48 +1570,11 @@ footer .links .nav .active {
     }
 }
 
-@media (max-width: 480px) {
-    .top__header .links {
-        flex-direction: column;
+@media (max-width: 576px) {
+    .page-content__text .row .row .col {
+        padding-right: 15px;
         width: 100%;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    .top__header .links > div:first-child {
-        margin-bottom: 15px;
-    }
-
-    .design__link {
-        margin-left: 0;
-    }
-
-    .menu {
-        margin-top: 10px;
-    }
-
-    header .phone {
-        justify-content: flex-start;
-    }
-
-    header .phone-number {
-        margin: 0 20px 15px 0;
-    }
-    .dropdown-toggle.btn {
-        padding: 0;
-    }
-    .yellow .catalog .row .col {
         flex: none;
-        width: 100%;
-    }
-    .yellow .item hr {
-        width: 25%;
-    }
-    footer .catalog-navigation {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
-        height: 190px;
     }
     .company-info,
     .bottom-info {
@@ -1622,7 +1588,9 @@ footer .links .nav .active {
         text-align: center;
     }
     .yellow .schedule {
+        margin-bottom: 15px;
         margin-right: 0;
+        width: 100%;
     }
     .copyright,
     .it-developer {
@@ -1635,7 +1603,126 @@ footer .links .nav .active {
     .copyright {
         margin-bottom: 15px;
     }
-    footer .links  > div {
+    main,
+    footer {
+        padding: 0 15px;
+    }
+    .left-side {
+        flex-wrap: wrap;
         width: 100%;
+    }
+    .bottom__header .left-side {
+        justify-content: center;
+    }
+    .top__header,
+    .bottom__header {
+        padding: 10px 15px;
+    }
+    .green .phone-number {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-nav {
+        justify-content: center;
+        margin: 15px 0;
+    }
+    header .phone {
+        justify-content: center;
+    }
+    .pagination {
+        margin: 15px 0 35px;
+        justify-content: center;
+    }
+    header .phone-number {
+        margin: 0 20px 15px 0;
+    }
+    .top__header {
+        margin-bottom: 15px;
+    }
+    .yellow .item__img {
+        max-height: 320px;
+    }
+    .top__header .links {
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .top__header .links > div:first-child {
+        margin-bottom: 15px;
+    }
+    .design__link {
+        margin-left: 0;
+    }
+    .menu {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .dropdown-toggle.btn {
+        padding: 0;
+    }
+    .yellow .catalog .row .col {
+        flex: none;
+        width: 100%;
+    }
+    .yellow .item hr {
+        width: 35%;
+    }
+    footer .catalog-navigation {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        height: 190px;
+    }
+    footer .links > div {
+        width: 100%;
+    }
+    main {
+        margin: 25px 0 0;
+    }
+    .yellow .price .light-bold {
+        width: 55%;
+    }
+    .yellow .item__price .price {
+        width: 100%;
+    }
+    .yellow .old-price {
+        top: -25px;
+    }
+    .yellow .item__title .title,
+    .yellow .price-number {
+        font-size: 22px;
+    }
+    footer .links .nav li:before {
+        display: none;
+    }
+    footer .links .nav li a {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    footer .links div:not(.col-md-5) {
+        width: 50%;
+    }
+    footer .links div:last-child {
+        margin-top: 20px;
+    }
+    .city-block {
+        margin-bottom: 30px;
+    }
+    footer .links {
+        margin-top: 25px;
+    }
+    .bottom-info {
+        margin-bottom: 30px;
+    }
+    .catalog {
+        margin-bottom: 35px;
+    }
+    .yellow .img-content {
+        height: 260px;
+        max-height: 260px;
+    }
+    footer {
+        margin: 35px 0 0;
     }
 }
