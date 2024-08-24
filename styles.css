@@ -1728,4 +1728,11 @@ footer .links .nav .active {
     .navbar-nav {
         gap: 10px;
     }
+    .btn-group {
+        margin-right: 15px;
+    }
+    .dropdown-toggle.btn,
+    body {
+        font-size: 14px;
+    }
 }
